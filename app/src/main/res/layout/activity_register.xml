@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shahd.vroom.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/etUsername"
+        android:layout_alignEnd="@+id/bRegister"
+        android:layout_alignLeft="@+id/bRegister"
+        android:layout_alignRight="@+id/bRegister"
+        android:layout_alignStart="@+id/bRegister"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="351dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignEnd="@+id/etName"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignRight="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="351dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/etAge"
+        android:layout_alignEnd="@+id/etUsername"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_alignRight="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bRegister"
+        android:layout_alignEnd="@+id/bRegister"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignRight="@+id/bRegister"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        tools:layout_editor_absoluteY="242dp"
+        tools:layout_editor_absoluteX="14dp"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

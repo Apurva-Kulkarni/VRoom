@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_shortlist"
+            android:icon="@drawable/shortlist"
+            android:title="Shortlist" />
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/recents"
+            android:title="Recents" />
+        <item
+            android:id="@+id/nav_filters"
+            android:icon="@drawable/filter"
+            android:title="Filters" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
