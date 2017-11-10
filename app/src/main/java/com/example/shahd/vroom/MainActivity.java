@@ -1,5 +1,6 @@
 package com.example.shahd.vroom;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -79,22 +80,47 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new homefrag()).commit();
+            getSupportActionBar().setTitle("Home");
+
         } else if (id == R.id.nav_shortlist) {
+
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new shortlistfrag()).commit();
+            getSupportActionBar().setTitle("Shortlist");
 
         } else if (id == R.id.nav_recent) {
 
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new recentsfrag()).commit();
+            getSupportActionBar().setTitle("Recents");
+
         } else if (id == R.id.nav_filters) {
+
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new filtersfrag()).commit();
+            getSupportActionBar().setTitle("Filters");
 
         } else if (id == R.id.nav_notif) {
 
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new notificationfrag()).commit();
+            getSupportActionBar().setTitle("Notification Settings");
+
         } else if (id == R.id.nav_profile) {
+
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new profilefrag()).commit();
+            getSupportActionBar().setTitle("Profile");
 
         } else if (id == R.id.nav_feedback) {
 
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new feedbackfrag()).commit();
+            getSupportActionBar().setTitle("Feedback");
+
         } else if (id == R.id.nav_about) {
+
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new aboutfrag()).commit();
+            getSupportActionBar().setTitle("About Us");
 
         }
 
