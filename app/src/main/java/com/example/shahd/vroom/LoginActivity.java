@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etPassword=(EditText) findViewById(R.id.etPassword);
         final Button etLogin= (Button) findViewById(R.id.bLogin);
 
-        final TextView RegisterLink= (TextView) findViewById(R.id.tvRegisterHere);
+        final TextView RegisterLink= (TextView) findViewById(R.id.b1Login);
         RegisterLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
