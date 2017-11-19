@@ -1,19 +1,9 @@
-﻿##git pull
-##git add .
-##git commit -m "xyz"
-##git push
 
 
-
-
-
-
-
-
-
-
-
-## Welcome to GitHub Pages
+## git pull
+## git add .
+## git commit -m "xyz"
+## git push
 
 You can use the [editor on GitHub](https://github.com/Apurva-Kulkarni/VRoom/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
