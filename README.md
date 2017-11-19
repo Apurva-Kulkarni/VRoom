@@ -1,7 +1,7 @@
-﻿git pull
-git add .
-git commit -m "xyz"
-git push
+﻿##git pull
+##git add .
+##git commit -m "xyz"
+##git push
 
 
 
